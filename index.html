@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap, fontawesome, google fonts, and my stylesheet; reset not included in given code, so I didn't add one -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,6 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,15 +32,129 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      
+      <!-- Time blocks - 8am; I like to start work early -->
+      <div class="time-block row">
+        <div class="col-1 hour">
+          8AM
+        </div>
+        <div class="col-10 form-group">
+          <textarea class="form-control" id="1" rows="3"></textarea>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn" value="1"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!-- Time blocks - 9am -->
+      <div class="time-block row">
+        <div class="col-1 hour">
+          9AM
+        </div>
+        <div class="col-10 form-group">
+          <textarea class="form-control" id="2" rows="3"></textarea>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn" value="2"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!-- Time blocks - 10am -->
+      <div class="time-block row">
+        <div class="col-1 hour">
+          10AM
+        </div>
+        <div class="col-10 form-group">
+          <textarea class="form-control" id="3" rows="3"></textarea>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn" value="3"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!-- Time blocks - 11am -->
+      <div class="time-block row">
+        <div class="col-1 hour">
+          11AM
+        </div>
+        <div class="col-10 form-group">
+          <textarea class="form-control" id="4" rows="3"></textarea>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn" value="4"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!-- Time blocks - 12pm -->
+      <div class="time-block row">
+        <div class="col-1 hour">
+          12PM
+        </div>
+        <div class="col-10 form-group">
+          <textarea class="form-control" id="5" rows="3"></textarea>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn" value="5"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!-- Time blocks - 1pm -->
+      <div class="time-block row">
+        <div class="col-1 hour">
+          1PM
+        </div>
+        <div class="col-10 form-group">
+          <textarea class="form-control" id="6" rows="3"></textarea>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn"value="6"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!-- Time blocks - 2pm -->
+      <div class="time-block row">
+        <div class="col-1 hour">
+          2PM
+        </div>
+        <div class="col-10 form-group">
+          <textarea class="form-control" id="7" rows="3"></textarea>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn" value="7"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!-- Time blocks - 3pm -->
+      <div class="time-block row">
+        <div class="col-1 hour">
+          3PM
+        </div>
+        <div class="col-10 form-group">
+          <textarea class="form-control" id="8" rows="3"></textarea>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn" value="8"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!-- Time blocks - 4pm -->
+      <div class="time-block row">
+        <div class="col-1 hour">
+          4PM
+        </div>
+        <div class="col-10 form-group">
+          <textarea class="form-control" id="9" rows="3"></textarea>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn" value="9"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
     </div>
-    <script>
-        $(document).ready(function() {
-
-
-        });
-    </script>
+    
+    <!-- jQuery, moment, and my script -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src = "script.js"></script>
   </body>
 </html>
